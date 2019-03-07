@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 9</title>
+    <script type="text/javascript">
+      let firstName = "Peter";
+      let lastName = "Smith";
+      let age = 21;
+      let result = `My name is ${firstName} ${lastName}, I am ${age}.`
+        window.onload = function() {
+          document.getElementById("demo").innerHTML = result;
+          }
+    </script>
+  </head>
+
+  <body>
+    <p id='demo'>State your name and age.</p>
+  </body>
+</html>
+
+<!-- backticks: `` & template literals: ${abc} allow for more concise string interpolation to avoid using: + ""-->

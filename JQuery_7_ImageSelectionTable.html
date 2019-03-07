@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang-"en">
+	<head>
+		<meta charset-"utf-8"/>
+		<title>Assignment 7</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-
+	BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstraptheme.
+	min.css" integrity="sha384-
+	rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-
+	Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<script>
+			$(document).ready(function(){
+
+					$("#image1").click(function(){
+							$("#image1b").attr("src", "assets/image1b.jpg"); //large jpg
+							$("#image1 .thumbnailPic").css({"border-width":"10px", "border-radius":"30%"});
+							$("#image2 .thumbnailPic").css({"border-width":"0px", "border-radius":"0%"});
+							$("#image3 .thumbnailPic").css({"border-width":"0px", "border-radius":"0%"});
+					});
+
+					$("#image2").click(function(){
+							$("#image1b").attr("src", "assets/image2b.jpg"); //large jpg
+							$("#image1 .thumbnailPic").css({"border-width":"0px", "border-radius":"0%"});
+							$("#image2 .thumbnailPic").css({"border-width":"10px", "border-radius":"30%"}); //on
+							$("#image3 .thumbnailPic").css({"border-width":"0px", "border-radius":"0%"});
+					});
+
+					$("#image3").click(function(){
+							$("#image1b").attr("src", "assets/image3b.jpg"); //large jpg
+							$("#image1 .thumbnailPic").css({"border-width":"0px", "border-radius":"0%"});
+							$("#image2 .thumbnailPic").css({"border-width":"0px", "border-radius":"0%"});
+							$("#image3 .thumbnailPic").css({"border-width":"10px", "border-radius":"30%"});
+					});
+
+			});
+		</script>
+
+	<style type="text/css">
+
+		.thumbnailPic {
+			border-style: solid;
+			border-width: 0px;
+			border-color: #8a4419;
+			border-radius: 0%;
+		}
+	</style>
+
+	</head>
+
+	<body>
+		<table style="width: 500px;">
+			<tr>
+				<td><a href="#" id="image1"><img class="thumbnailPic" style="border-radius: 30%; border-width: 10px;" src="assets/image1.jpg"></a></td>
+				<td rowspan="3"><img id="image1b" src="assets/image1b.jpg"></td>
+			</tr>
+			<tr>
+				<td><a href="#" id="image2"><img class="thumbnailPic" src="assets/image2.jpg"></a></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><a href="#" id="image3"><img class="thumbnailPic" src="assets/image3.jpg"></a></td>
+				<td></td>
+			</tr>
+		</table>
+
+</body>
+</html>
